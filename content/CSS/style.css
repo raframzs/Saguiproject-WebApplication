@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #FBDDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+button{
+    margin-top: 5px;
+}
+
+form {
+    width: auto;
+    height: auto;
+}
+
+::selection {
+    background: #FBDDEA;
+    color: #fff;
+}
+
+.line-1 {
+    width: 5px;
+    height: 40px;
+    background: #FBDDEA ;
+    margin: auto;
+    position: relative;
+    left: 45px;
+    top: -20px;
+    transform: rotate(-45deg);
+    transition: .5s;
+    transition-timing-function: cubic-bezier(1,0,.3,1);
+    cursor: pointer;
+}
+
+.line-2 {
+    width: 5px;
+    height: 0px;
+    background: #949494;
+    margin: auto;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 0;
+    top: -40px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    transition-timing-function: cubic-bezier(1,0,.3,1);
+    cursor: pointer;
+}
+
+.search {
+    font-weight: 900;
+    color: #949494;
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ffa0cd;
+    border-radius: 100px;
+    cursor: default;
+    transition: .7s;
+    transition-timing-function:cubic-bezier(1,-0.5,0,1.5);
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 15px;
+    outline: none;
+    font-size: 32px;
+    background: transparent;
+}
+
+
+.active {
+    width: 500px;
+    height: 100px;
+    border: 5px solid #ff8dc2;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+table{
+    margin-top: 10px;
+}
+
+/* Modify the backgorund color */ 
+.navbar-custom { 
+    background-color: #929496; 
+  } 
